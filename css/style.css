@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+html{
+    background-color: hsl(233, 47%, 7%);
+    font-size: 15px;
+}
+.container{
+    width: 73em;
+    height: 30em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+.text{
+    box-sizing: border-box;
+    padding: 3.5em 5em 0 5em;
+    width: 50%;
+    background-color: hsl(244, 38%, 16%);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.text h1{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 2.3em;
+    color: hsl(0, 0%, 100%);
+}
+.text span{
+    color: hsl(277, 64%, 61%);
+}
+.text p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.9em;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin: 2.5em 2.5em 0 0;
+}
+table{
+    position: absolute;
+    width: 23em;
+    margin-top: 4.5em;
+
+}
+.text td{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.8em;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+.text td span{
+    font-family: 'Inter', sans-serif;;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 1.7em;
+}
+.image{
+    width: 50%;
+    background-image: url(/images/image-header-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: hsl(277, 83%, 25%);
+    opacity: 60%;
+    border-radius: inherit;
+}
+.attribution{
+    position: absolute;
+    bottom: 30px;
+    color:  hsla(0, 0%, 100%, 0.6);
+}
+.attribution a{
+    color: hsl(277, 64%, 61%);
+}
+.attribution a:visited{
+    color: hsl(0, 0%, 100%);
+}
