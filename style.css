@@ -90,28 +90,9 @@ body {
     border-radius: inherit;
 }
 
-.attribution {
-    position: absolute;
-    bottom: 5px;
-    width: 100%;
-    color: hsla(0, 0%, 100%, 0.6);
-    text-align: center;
-}
 
-.attribution p {
-    text-align: center;
-}
+@media (min-width: 1000px) and (orientation: landscape){
 
-.attribution a {
-    color: hsl(277, 64%, 61%);
-}
-
-.attribution a:visited {
-    color: hsl(0, 0%, 100%);
-}
-
-@media (min-width: 1000px) {
-    
     .container {
         width: 73em;
         height: 30em;
