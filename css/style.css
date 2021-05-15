@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
 
-html{
+html {
     background-color: hsl(233, 47%, 7%);
     font-size: 15px;
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
 }
-.container{
+
+.container {
     width: 73em;
     height: 30em;
     position: absolute;
@@ -19,7 +21,8 @@ body{
     transform: translate(-50%, -50%);
     display: flex;
 }
-.text{
+
+.text {
     box-sizing: border-box;
     padding: 3.5em 5em 0 5em;
     width: 50%;
@@ -27,65 +30,122 @@ body{
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
-.text h1{
+
+.text h1 {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 2.3em;
     color: hsl(0, 0%, 100%);
 }
-.text span{
+
+.text span {
     color: hsl(277, 64%, 61%);
 }
-.text p{
+
+.text p {
     font-family: 'Lexend Deca', sans-serif;
     font-size: 0.9em;
     color: hsla(0, 0%, 100%, 0.75);
     margin: 2.5em 2.5em 0 0;
 }
-table{
+
+table {
     position: absolute;
     width: 23em;
     margin-top: 4.5em;
 }
-.text td{
+
+.text td {
     font-family: 'Lexend Deca', sans-serif;
     font-size: 0.8em;
     color: hsla(0, 0%, 100%, 0.6);
 }
-.text td span{
-    font-family: 'Inter', sans-serif;;
+
+.text td span {
+    font-family: 'Inter', sans-serif;
     color: hsl(0, 0%, 100%);
     font-weight: 700;
     font-size: 1.7em;
 }
-.image{
+
+.image {
     width: 50%;
-    background-image: url(/images/image-header-desktop.jpg);
+    background-image: url(../images/image-header-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
-.overlay{
+.overlay {
     width: 100%;
     height: 100%;
     background-color: hsl(277, 83%, 25%);
     opacity: 60%;
     border-radius: inherit;
 }
-.attribution{
+
+.attribution {
     position: absolute;
     bottom: 30px;
     width: 100%;
-    color:  hsla(0, 0%, 100%, 0.6);
+    color: hsla(0, 0%, 100%, 0.6);
     text-align: center;
 }
-.attribution p{
+
+.attribution p {
     text-align: center;
 }
-.attribution a{
+
+.attribution a {
     color: hsl(277, 64%, 61%);
 }
-.attribution a:visited{
+
+.attribution a:visited {
     color: hsl(0, 0%, 100%);
+}
+
+@media (max-width: 1000px) and (min-width: 798px) {
+    .container {
+        width: 50em;
+        height: 20.7em;
+    }
+
+    .text {
+        padding: 1.8em 2.5em 0 3.5em;
+    }
+
+    .text h1 {
+        font-size: 1.8em;
+    }
+
+    .text p {
+        font-size: 0.7em;
+        color: hsla(0, 0%, 100%, 0.75);
+        margin: 2.5em 2.5em 0 0;
+    }
+
+    table {
+        width: 20em;
+        margin-top: 3em;
+    }
+
+    .text td {
+        font-size: 0.7em;
+    }
+
+    .text td span {
+        font-weight: 700;
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 798px) {
+    .container {
+        flex-direction: column;
+        width: 50%;
+        height: 5px;
+    }
+    .text h1 {
+        font-size: 1em;
+    }
 }
