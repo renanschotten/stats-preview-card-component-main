@@ -70,7 +70,7 @@ table {
 
 .image {
     width: 50%;
-    background-image: url(../images/image-header-desktop.jpg);
+    background-image: url(images/image-header-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-top-right-radius: 15px;
