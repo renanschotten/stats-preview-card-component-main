@@ -3,8 +3,8 @@
 html {
     background-color: hsl(233, 47%, 7%);
     font-size: 15px;
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    height: 100%;
 }
 
 body {
@@ -13,69 +13,75 @@ body {
 }
 
 .container {
-    width: 73em;
-    height: 30em;
+    width: 25em;
+    height: 50em;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
+    flex-direction: column-reverse;
 }
 
 .text {
     box-sizing: border-box;
-    padding: 3.5em 5em 0 5em;
-    width: 50%;
+    width: 100%;
+    height: 70%;
     background-color: hsl(244, 38%, 16%);
-    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
 }
 
 .text h1 {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-    font-size: 2.3em;
+    font-size: 2.2em;
     color: hsl(0, 0%, 100%);
+    text-align: center;
+    margin: 1.5em 1em 0em 1em;
+}
+
+.text p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin: 1.4em 1.5em;
 }
 
 .text span {
     color: hsl(277, 64%, 61%);
 }
 
-.text p {
-    font-family: 'Lexend Deca', sans-serif;
-    font-size: 0.9em;
-    color: hsla(0, 0%, 100%, 0.75);
-    margin: 2.5em 2.5em 0 0;
+.stats {
+    margin: 2em 0em 5em;
 }
 
-table {
-    position: absolute;
-    width: 23em;
-    margin-top: 4.5em;
-}
-
-.text td {
+.stats p {
+    text-align: center;
     font-family: 'Lexend Deca', sans-serif;
     font-size: 0.8em;
     color: hsla(0, 0%, 100%, 0.6);
 }
 
-.text td span {
+.stats span {
     font-family: 'Inter', sans-serif;
     color: hsl(0, 0%, 100%);
     font-weight: 700;
     font-size: 1.7em;
 }
 
+
 .image {
-    width: 50%;
-    background-image: url(images/image-header-desktop.jpg);
+    width: 100%;
+    height: 40%;
+    background-image: url(images/image-header-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
+
 .overlay {
     width: 100%;
     height: 100%;
@@ -86,7 +92,7 @@ table {
 
 .attribution {
     position: absolute;
-    bottom: 30px;
+    bottom: 5px;
     width: 100%;
     color: hsla(0, 0%, 100%, 0.6);
     text-align: center;
@@ -104,48 +110,63 @@ table {
     color: hsl(0, 0%, 100%);
 }
 
-@media (max-width: 1000px) and (min-width: 798px) {
+@media (min-width: 1000px) {
+    
     .container {
-        width: 50em;
-        height: 20.7em;
+        width: 73em;
+        height: 30em;
+        flex-direction: row;
     }
 
     .text {
-        padding: 1.8em 2.5em 0 3.5em;
+        box-sizing: border-box;
+        padding: 1em 2.8em 0 1em;
+        width: 50%;
+        height: 100%;
+        background-color: hsl(244, 38%, 16%);
+        border-radius: 15px 0 0 15px;
     }
 
     .text h1 {
-        font-size: 1.8em;
+        font-size: 2.4em;
+        text-align: start;
     }
 
     .text p {
-        font-size: 0.7em;
-        color: hsla(0, 0%, 100%, 0.75);
-        margin: 2.5em 2.5em 0 0;
-    }
-
-    table {
-        width: 20em;
-        margin-top: 3em;
-    }
-
-    .text td {
-        font-size: 0.7em;
-    }
-
-    .text td span {
-        font-weight: 700;
-        font-size: 1.5em;
-    }
-}
-
-@media (max-width: 798px) {
-    .container {
-        flex-direction: column;
-        width: 50%;
-        height: 5px;
-    }
-    .text h1 {
         font-size: 1em;
+        text-align: start;
+        padding: 1em 5em 0 2em;
+        margin: 2em 0em;
+    }
+
+    .image {
+        width: 50%;
+        height: 100%;
+        background-image: url(images/image-header-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 0px 15px 15px 0px;
+    }
+
+    .stats {
+        display: flex;
+        flex-direction: row;
+        margin: 5em 0em 0em 1em;
+    }
+
+    .stats div {
+        margin: 1em 2em 0 2em;
+    }
+
+    .stats p {
+        text-align: start;
+        margin: 0;
+        padding: 0;
+        font-size: 0.9em;
+        color: hsla(0, 0%, 100%, 0.6);
+    }
+
+    .stats span {
+        font-size: 1.5em;
     }
 }
