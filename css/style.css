@@ -3,6 +3,12 @@
 html{
     background-color: hsl(233, 47%, 7%);
     font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
 }
 .container{
     width: 73em;
@@ -40,7 +46,6 @@ table{
     position: absolute;
     width: 23em;
     margin-top: 4.5em;
-
 }
 .text td{
     font-family: 'Lexend Deca', sans-serif;
@@ -71,7 +76,12 @@ table{
 .attribution{
     position: absolute;
     bottom: 30px;
+    width: 100%;
     color:  hsla(0, 0%, 100%, 0.6);
+    text-align: center;
+}
+.attribution p{
+    text-align: center;
 }
 .attribution a{
     color: hsl(277, 64%, 61%);
